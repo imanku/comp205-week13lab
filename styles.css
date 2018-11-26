@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+.box1{
+    background-color: white;
+    height: 300px;
+}
+.box2{
+    background-color: white;
+    height: 300px;
+}
+@media only screen and (min-width:1200px){
+    .box1, .box2{
+        width: 49%;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+    .box1{
+        width: 100%;
+        display: block;
+        font-size: 16px;
+    }
+    .box2{
+        width: 100%;
+        display: block;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width:350px) and (max-width:767px){
+    .box1{
+        display: block;
+        background-color: blue;
+    }
+    .box2{
+        display: block;
+        background-color: yellow;
+    }
+}
